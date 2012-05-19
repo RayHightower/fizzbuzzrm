@@ -7,6 +7,3 @@ class AppDelegate
   end
 end
 
-# Now testing Guard with fizzbuzz. Let's go! ~RTH
-# Now testing Guard with fizzbuzz. Let's go! ~RTH
-# Now testing Guard with fizzbuzz. Let's go! ~RTH
