@@ -9,5 +9,5 @@ Motion::Project::App.setup do |app|
   app.provisioning_profile = @iPhone_provision
   app.codesign_certificate = 'iPhone Developer: Raymond T Hightower (Z9NP4QZ4AE)'
   app.device_family = :iphone
-  # app.icons << 'icon.png'
+  app.icons << 'f.png'
 end
