@@ -3,3 +3,5 @@ class AppDelegate
     true
   end
 end
+
+# Now testing Guard with fizzbuzz. Let's go! ~RTH
