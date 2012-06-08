@@ -7,7 +7,7 @@ class FizzBuzzViewController < UIViewController
     @label = UILabel.alloc.initWithFrame([[10,60], [300,80]])
     view.addSubview(@label)
 
-    # view.image = UIImage.imageNamed('fizzbuzzbackground.png')
+    view.image = UIImage.imageNamed('fizzbuzzbackground.jpg')
   end
 
   def self.calc(this_number)
