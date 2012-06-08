@@ -8,7 +8,7 @@ describe "Calculator Function" do
   end
 
   it 'should return the fizz for 3' do
-    FizzBuzzViewController.calc(3).should == 'fizz'
+    FizzBuzzViewController.calc(8).should == 'fizz'
   end
 
   it 'should return the buzz for 5' do
