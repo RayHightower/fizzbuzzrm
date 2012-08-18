@@ -9,9 +9,9 @@ class HomeController < UIViewController
   def viewDidLoad
     plus_button = view.viewWithTag 2
     minus_button = view.viewWithTag 3
-    @label = view.viewwithTag 1
-    plus_button.addTarget(self, action:'plusTapped:', forControlEvents:UiControlEventTouchUpInside)
-    minus_button.addTarget(self, action:'minusTapped:', forControlEvents:UiControlEventTouchUpInside)
+    @label = view.viewWithTag 1
+    plus_button.addTarget(self, action:'plusTapped:', forControlEvents:UIControlEventTouchUpInside)
+    minus_button.addTarget(self, action:'minusTapped:', forControlEvents:UIControlEventTouchUpInside)
   end
 
   def plusTapped(sender)
