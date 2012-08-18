@@ -3,7 +3,7 @@ class HomeController < UIViewController
   def loadView
     views = NSBundle.mainBundle.loadNibNamed "fbib", owner:self, options:nil
     self.view = views[0]
-    @display = 0
+    @counter = 0
   end
 
   def viewDidLoad
@@ -15,13 +15,20 @@ class HomeController < UIViewController
   end
 
   def plusTapped(sender)
-    @display = @display + 1
-    @label.text = @display.to_s
+    @counter += 1
+    @label.text = fizzbuzz_calc(@counter).to_s
   end
 
   def minusTapped(sender)
-    @display = @display - 1
-    @label.text = @display.to_s
+    @counter -= 1
+    @label.text = fizzbuzz_calc(@counter).to_s
+  end
+
+  def fizzbuzz_calc(this_number)
+    return 'fizzbuzz' if this_number % 15 == 0
+    return 'buzz' if this_number % 5 == 0
+    return 'fizz' if this_number % 3 == 0
+    this_number
   end
 
 end
