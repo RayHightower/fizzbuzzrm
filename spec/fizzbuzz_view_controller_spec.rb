@@ -1,6 +1,6 @@
 describe "Calculator Function" do
   before do
-    this_number = 28
+    this_number = 38
   end
 
   it 'should return the integer if it is not fizzable or buzzable' do
