@@ -24,7 +24,7 @@ class HomeController < UIViewController
     @label.text = fizzbuzz_calc(@counter).to_s
   end
 
-  def fizzbuzz_calc(this_number)
+  def self.fizzbuzz_calc(this_number)
     return 'fizzbuzz' if this_number % 15 == 0
     return 'buzz' if this_number % 5 == 0
     return 'fizz' if this_number % 3 == 0
