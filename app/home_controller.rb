@@ -30,12 +30,15 @@ class HomeController < UIViewController
     @counter = 0
     @label.text = "Begin"
 
-    alert = UIAlertView.new
-    alert.message = "Counter has been reset to zero."
-    alert.show
-    sleep 5.0
-    alert.dismiss
+    show_alert_until_clicked ("Reset button has been tappeed.")
 
+  end
+
+  def show_alert_until_clicked(message)
+    alert = UIAlertView.new
+    alert.message = message
+    alert.show
+    alert.dismiss
   end
 
   def fizzbuzz_calc(this_number)
