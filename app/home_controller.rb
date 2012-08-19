@@ -9,9 +9,11 @@ class HomeController < UIViewController
   def viewDidLoad
     plus_button = view.viewWithTag 2
     minus_button = view.viewWithTag 3
+    begin_again_button = view.viewWithTag 4
     @label = view.viewWithTag 1
     plus_button.addTarget(self, action:'plusTapped:', forControlEvents:UIControlEventTouchUpInside)
     minus_button.addTarget(self, action:'minusTapped:', forControlEvents:UIControlEventTouchUpInside)
+    begin_again_button.addTarget(self, action:'beginAgainTapped:', forControlEvents:UIControlEventTouchUpInside)
   end
 
   def plusTapped(sender)
@@ -22,6 +24,11 @@ class HomeController < UIViewController
   def minusTapped(sender)
     @counter -= 1
     @label.text = fizzbuzz_calc(@counter).to_s
+  end
+
+  def beginAgainTapped(sender)
+    @counter = 0
+    @label.text = "Begin"
   end
 
   def fizzbuzz_calc(this_number)
