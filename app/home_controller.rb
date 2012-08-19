@@ -4,16 +4,20 @@ class HomeController < UIViewController
     views = NSBundle.mainBundle.loadNibNamed "fbib", owner:self, options:nil
     self.view = views[0]
     @counter = 0
+    @view_handle = self.view
   end
 
   def viewDidLoad
+    @label = view.viewWithTag 1
     plus_button = view.viewWithTag 2
     minus_button = view.viewWithTag 3
     reset_button = view.viewWithTag 4
-    @label = view.viewWithTag 1
+    # background_area = view.viewWithTag 5
+
     plus_button.addTarget(self, action:'plusTapped:', forControlEvents:UIControlEventTouchUpInside)
     minus_button.addTarget(self, action:'minusTapped:', forControlEvents:UIControlEventTouchUpInside)
     reset_button.addTarget(self, action:'resetTapped:', forControlEvents:UIControlEventTouchUpInside)
+    # background_area.addTarget(self, action:'backgroundTapped:', forControlEvents:UIControlEventTouchUpInside)
   end
 
   def plusTapped(sender)
@@ -30,15 +34,24 @@ class HomeController < UIViewController
     @counter = 0
     @label.text = "Begin"
 
+    @view_handle.backgroundColor = UIColor.redColor
+
     show_alert_until_clicked ("Reset button has been tappeed.")
+
+    @view_handle.backgroundColor = UIColor.blueColor
+    # @view_handle.backgroundColor = nil
 
   end
 
+  def backgroundTapped
+    @alert.dismiss
+    
+  end
+
   def show_alert_until_clicked(message)
-    alert = UIAlertView.new
-    alert.message = message
-    alert.show
-    # alert.dismiss
+    @alert = UIAlertView.new
+    @alert.message = message
+    @alert.show
   end
 
   def fizzbuzz_calc(this_number)

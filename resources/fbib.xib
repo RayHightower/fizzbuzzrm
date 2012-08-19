@@ -167,6 +167,7 @@
 						<int key="NSID">2</int>
 					</object>
 				</object>
+				<int key="IBUITag">5</int>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
