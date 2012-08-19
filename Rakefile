@@ -1,7 +1,7 @@
 $:.unshift("/Library/RubyMotion/lib")
 require 'motion/project'
 require 'rubygems'
-require 'motion-dtrace'
+# require 'motion-dtrace'
 
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.

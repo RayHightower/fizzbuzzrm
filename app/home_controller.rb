@@ -38,7 +38,7 @@ class HomeController < UIViewController
     alert = UIAlertView.new
     alert.message = message
     alert.show
-    alert.dismiss
+    # alert.dismiss
   end
 
   def fizzbuzz_calc(this_number)
