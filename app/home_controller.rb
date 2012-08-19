@@ -31,8 +31,10 @@ class HomeController < UIViewController
     @label.text = "Begin"
 
     alert = UIAlertView.new
-    alert.message = "Now resetting the counter to zero."
+    alert.message = "Counter has been reset to zero."
     alert.show
+    sleep 5.0
+    alert.dismiss
 
   end
 
