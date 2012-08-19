@@ -29,6 +29,11 @@ class HomeController < UIViewController
   def resetTapped(sender)
     @counter = 0
     @label.text = "Begin"
+
+    alert = UIAlertView.new
+    alert.message = "Now resetting the counter to zero."
+    alert.show
+
   end
 
   def fizzbuzz_calc(this_number)
