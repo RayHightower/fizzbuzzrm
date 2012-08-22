@@ -49,9 +49,15 @@ class HomeController < UIViewController
   end
 
   def show_alert_until_clicked(themessage)
-    @alert = UIAlertView.alloc.initWithTitle("Sample Alert",message: "Where will this appear?",delegate: nil,cancelButtonTitle: "Cancel",otherButtonTitles: "Ok")
-    # @alert.message = message
-    @alert.show
+    UIAlertView.alert("title", 
+  message: "help!", 
+  buttons: %w"Cancel OK No-way", 
+  cancel: proc{ puts "nevermind" }, 
+  success: proc{ |pressed| puts "pressed: #{pressed}" },  # => one of  "OK", "No-way" 
+  ) 
+   #  @alert = UIAlertView.alloc.initWithTitle("Sample Alert",message: "Where will this appear?",delegate: nil,cancelButtonTitle: "Cancel",otherButtonTitles: "Ok")
+   #  # @alert.message = message
+   #  @alert.show
   end
 
   def fizzbuzz_calc(this_number)
