@@ -48,9 +48,9 @@ class HomeController < UIViewController
     
   end
 
-  def show_alert_until_clicked(message)
-    @alert = UIAlertView.new
-    @alert.message = message
+  def show_alert_until_clicked(themessage)
+    @alert = UIAlertView.alloc.initWithTitle("Sample Alert",message: "Where will this appear?",delegate: nil,cancelButtonTitle: "Cancel",otherButtonTitles: "Ok")
+    # @alert.message = message
     @alert.show
   end
 
