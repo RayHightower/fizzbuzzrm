@@ -50,11 +50,11 @@ class HomeController < UIViewController
 
   def show_alert_until_clicked(themessage)
     UIAlertView.alert("title", 
-  message: "help!", 
-  buttons: %w"Cancel OK No-way", 
-  cancel: proc{ puts "nevermind" }, 
-  success: proc{ |pressed| puts "pressed: #{pressed}" },  # => one of  "OK", "No-way" 
-  ) 
+    message: "help!", 
+    buttons: %w"Cancel OK No-way", 
+    cancel: proc{ puts "nevermind" }, 
+    success: proc{ |pressed| puts "pressed: #{pressed}" },  # => one of  "OK", "No-way" 
+    ) 
    #  @alert = UIAlertView.alloc.initWithTitle("Sample Alert",message: "Where will this appear?",delegate: nil,cancelButtonTitle: "Cancel",otherButtonTitles: "Ok")
    #  # @alert.message = message
    #  @alert.show
