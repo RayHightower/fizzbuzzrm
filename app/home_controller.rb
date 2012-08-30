@@ -34,11 +34,12 @@ class HomeController < UIViewController
     @counter = 0
     @label.text = "Begin"
 
-    @view_handle.backgroundColor = UIColor.redColor
+    # @view_handle.backgroundColor = UIColor.redColor
 
-    show_alert_until_clicked ("Reset button has been tappeed.")
+    # show_alert_until_clicked ("Reset button has been tappeed.")
+    color_array = %w(redColor, blueColor, orangeColor)
 
-    @view_handle.backgroundColor = UIColor.blueColor
+    @view_handle.backgroundColor = UIColor.orangeColor
     # @view_handle.backgroundColor = nil
 
   end
