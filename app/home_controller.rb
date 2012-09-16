@@ -36,12 +36,26 @@ class HomeController < UIViewController
 
     # @view_handle.backgroundColor = UIColor.redColor
 
-    # show_alert_until_clicked ("Reset button has been tappeed.")
-    color_array = %w(redColor, blueColor, orangeColor)
+    rotate_background(@view_handle)
 
-    @view_handle.backgroundColor = UIColor.orangeColor
-    # @view_handle.backgroundColor = nil
+  end
 
+  def rotate_background(view_handle)
+    @color_index ||= 0
+
+    case @color_index
+    when 0
+      @view_handle.backgroundColor = UIColor.redColor
+    when 1
+      @view_handle.backgroundColor = UIColor.greenColor
+    when 2
+      @view_handle.backgroundColor = UIColor.blueColor
+    when 3
+      @view_handle.backgroundColor = UIColor.yellowColor
+    end
+
+    @color_index = (@color_index +1) % 4
+    
   end
 
   def backgroundTapped
