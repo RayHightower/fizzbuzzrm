@@ -1,4 +1,5 @@
 .repl_history
+.dat*.*
 build
 resources/*.nib
 resources/*.momd
