@@ -34,8 +34,6 @@ class HomeController < UIViewController
     @counter = 0
     @label.text = "Begin"
 
-    # @view_handle.backgroundColor = UIColor.redColor
-
     rotate_background(@view_handle)
 
   end
