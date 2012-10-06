@@ -5,9 +5,6 @@ class AppDelegate
 
      window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.bounds)
 
-     # window.rootViewController =
-     #        HomeController.alloc.init
-
      window.rootViewController = FizzBuzzViewController.alloc.init
 
      window.makeKeyAndVisible
