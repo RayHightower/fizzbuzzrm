@@ -1,4 +1,4 @@
-class HomeController < UIViewController
+class FizzBuzzViewController < UIViewController
 
   def loadView
     views = NSBundle.mainBundle.loadNibNamed "fbib", owner:self, options:nil
