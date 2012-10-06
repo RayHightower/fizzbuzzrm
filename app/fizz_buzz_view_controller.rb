@@ -74,6 +74,7 @@ class FizzBuzzViewController < UIViewController
   end
 
   def fizzbuzz_calc(this_number)
+    puts "This method does not exist: fizzbuzz_calc\n"
     return 'fizzbuzz' if this_number % 15 == 0
     return 'buzz' if this_number % 5 == 0
     return 'fizz' if this_number % 3 == 0
