@@ -53,7 +53,6 @@ class FizzBuzzViewController < UIViewController
     end
 
     @color_index = (@color_index +1) % 4
-    
   end
 
   def self.fbcalc(this_number)
