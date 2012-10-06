@@ -22,12 +22,12 @@ class FizzBuzzViewController < UIViewController
 
   def plusTapped(sender)
     @counter += 1
-    @label.text = fizzbuzz_calc(@counter).to_s
+    @label.text = FizzBuzzViewController.fbcalc(@counter).to_s
   end
 
   def minusTapped(sender)
     @counter -= 1
-    @label.text = fizzbuzz_calc(@counter).to_s
+    @label.text = FizzBuzzViewController.fbcalc(@counter).to_s
   end
 
   def resetTapped(sender)
@@ -56,25 +56,7 @@ class FizzBuzzViewController < UIViewController
     
   end
 
-  def backgroundTapped
-    @alert.dismiss
-    
-  end
-
-  def show_alert_until_clicked(themessage)
-    UIAlertView.alert("title", 
-    message: "help!", 
-    buttons: %w"Cancel OK No-way", 
-    cancel: proc{ puts "nevermind" }, 
-    success: proc{ |pressed| puts "pressed: #{pressed}" },  # => one of  "OK", "No-way" 
-    ) 
-   #  @alert = UIAlertView.alloc.initWithTitle("Sample Alert",message: "Where will this appear?",delegate: nil,cancelButtonTitle: "Cancel",otherButtonTitles: "Ok")
-   #  # @alert.message = message
-   #  @alert.show
-  end
-
-  def fizzbuzz_calc(this_number)
-    puts "This method does not exist: fizzbuzz_calc\n"
+  def self.fbcalc(this_number)
     return 'fizzbuzz' if this_number % 15 == 0
     return 'buzz' if this_number % 5 == 0
     return 'fizz' if this_number % 3 == 0
