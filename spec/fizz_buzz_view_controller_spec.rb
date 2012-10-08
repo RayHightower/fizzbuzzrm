@@ -1,9 +1,5 @@
 describe "FizzBuzz calculator Function" do
 
-  it 'should return the integer if it is not fizzable or buzzable' do
-    FizzBuzzViewController.fbcalc(38).should == 38
-  end
-
   it 'should return the fizz for 3' do
     FizzBuzzViewController.fbcalc(3).should == 'fizz'
   end
@@ -31,4 +27,9 @@ describe "FizzBuzz calculator Function" do
       end
    end
   end
+
+  it 'should return the integer if it is not fizzable or buzzable' do
+    FizzBuzzViewController.fbcalc(38).should == 38
+  end
+
 end
