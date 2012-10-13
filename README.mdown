@@ -7,7 +7,6 @@ in my introductory RubyMotion presentations:
 * Using RubyMotion with Xcode's Interface Builder
 * TDD with RubyMotion's RSpec clone, MacBacon
 
-Slides for the presentation can be found at [https://speakerdeck.com/search?q=rayhightower](SpeakerDeck).
+Slides for the presentation can be found at [SpeakerDeck](https://speakerdeck.com/search?q=rayhightower).
 
-Videos and other RubyMotion info will be posted at
-[http://rayhightower.com](RayHightower.com) as the info becomes available.
+Videos and other RubyMotion info will be posted at [RayHightower.com](http://rayhightower.com) as the info becomes available.
