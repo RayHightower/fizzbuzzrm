@@ -2,7 +2,7 @@ FizzBuzz for RubyMotion
 ===
 
 This is a simple, bare-bones RubyMotion app used to demo the following
-in my RubyMotion presentations:
+in my introductory RubyMotion presentations:
 
 * Using RubyMotion with Xcode's Interface Builder
 * TDD with RubyMotion's RSpec clone, MacBacon
