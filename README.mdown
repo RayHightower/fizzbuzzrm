@@ -1,12 +1,11 @@
 FizzBuzz for RubyMotion
 ===
 
-This is a simple, bare-bones RubyMotion app used to demo the following
-in my introductory RubyMotion presentations:
+This simple, bare-bones RubyMotion app was used in presentations at Aloha Ruby Conf and MagicRuby in October 2012. The Aloha Ruby presentation was [recorded on video](http://rayhightower.com/blog/2012/10/29/building-ios-apps-with-ruby-motion/).
+
+Key points demonstrated:
 
 * Using RubyMotion with Xcode's Interface Builder
 * TDD with RubyMotion's RSpec clone, MacBacon
 
-Slides for the presentation can be found at [SpeakerDeck](https://speakerdeck.com/search?q=rayhightower).
-
-Videos and other RubyMotion info will be posted at [RayHightower.com](http://rayhightower.com) as the info becomes available.
+Additional RubmMotion info will be posted at [RayHightower.com](http://rayhightower.com) I explore the tool further.
