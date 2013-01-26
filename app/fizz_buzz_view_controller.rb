@@ -43,14 +43,16 @@ class FizzBuzzViewController < UIViewController
 
     case @color_index
     when 0
-      @view_handle.backgroundColor = UIColor.redColor
+      newcolor = UIColor.redColor
     when 1
-      @view_handle.backgroundColor = UIColor.greenColor
+      newcolor = UIColor.greenColor
     when 2
-      @view_handle.backgroundColor = UIColor.blueColor
+      newcolor = UIColor.blueColor
     when 3
-      @view_handle.backgroundColor = UIColor.yellowColor
+      newcolor = UIColor.yellowColor
     end
+
+    @view_handle.backgroundColor = newcolor
 
     @color_index = (@color_index +1) % 4
   end
