@@ -1,0 +1,64 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ANSIColor	app/rm-ansiterm.rb	/^  module ANSIColor$/;"	m	class:Term
+App	app/app.rb	/^module App$/;"	m
+AppDelegate	app/app_delegate.rb	/^class AppDelegate$/;"	c
+Bacon	spec/00-redgreen.rb	/^    module Bacon$/;"	m
+FizzBuzzViewController	app/fizz_buzz_view_controller.rb	/^class FizzBuzzViewController < UIViewController$/;"	c
+Kernel	app/kernel.rb	/^class Kernel$/;"	c
+SpecDoxOutput	spec/00-redgreen.rb	/^      module SpecDoxOutput$/;"	m	class:Bacon
+String	app/string.rb	/^class String$/;"	c
+Term	app/rm-ansiterm.rb	/^module Term$/;"	m
+application	app/app_delegate.rb	/^   def application(application, $/;"	f	class:AppDelegate
+attributes	app/rm-ansiterm.rb	/^    def attributes$/;"	f	class:Term.ANSIColor
+black	app/rm-ansiterm.rb	/^      def black(string = nil)$/;"	f	class:Term.ANSIColor
+blink	app/rm-ansiterm.rb	/^      def blink(string = nil)$/;"	f	class:Term.ANSIColor
+blue	app/rm-ansiterm.rb	/^      def blue(string = nil)$/;"	f	class:Term.ANSIColor
+bold	app/rm-ansiterm.rb	/^      def bold(string = nil)$/;"	f	class:Term.ANSIColor
+clear	app/rm-ansiterm.rb	/^      def clear(string = nil)$/;"	f	class:Term.ANSIColor
+color_for	spec/00-redgreen.rb	/^  def color_for(error)$/;"	f
+coloring	app/rm-ansiterm.rb	/^    def self.coloring=(val)$/;"	F	class:Term.ANSIColor
+coloring	app/rm-ansiterm.rb	/^    def self.coloring?$/;"	F	class:Term.ANSIColor
+concealed	app/rm-ansiterm.rb	/^      def concealed(string = nil)$/;"	f	class:Term.ANSIColor
+cyan	app/rm-ansiterm.rb	/^      def cyan(string = nil)$/;"	f	class:Term.ANSIColor
+dark	app/rm-ansiterm.rb	/^      def dark(string = nil)$/;"	f	class:Term.ANSIColor
+development?	app/app.rb	/^  def development?$/;"	f	class:App
+fbcalc	app/fizz_buzz_view_controller.rb	/^  def self.fbcalc(this_number)$/;"	F	class:FizzBuzzViewController
+green	app/rm-ansiterm.rb	/^      def green(string = nil)$/;"	f	class:Term.ANSIColor
+handle_requirement_begin	spec/00-redgreen.rb	/^        def handle_requirement_begin(description)$/;"	f	class:Bacon.SpecDoxOutput
+handle_requirement_end	spec/00-redgreen.rb	/^        def handle_requirement_end(error)$/;"	f	class:Bacon.SpecDoxOutput
+handle_specification_begin	spec/00-redgreen.rb	/^        def handle_specification_begin(name)$/;"	f	class:Bacon.SpecDoxOutput
+handle_specification_end	spec/00-redgreen.rb	/^        def handle_specification_end$/;"	f	class:Bacon.SpecDoxOutput
+handle_summary	spec/00-redgreen.rb	/^        def handle_summary$/;"	f	class:Bacon.SpecDoxOutput
+italic	app/rm-ansiterm.rb	/^      def italic(string = nil)$/;"	f	class:Term.ANSIColor
+loadView	app/fizz_buzz_view_controller.rb	/^  def loadView$/;"	f	class:FizzBuzzViewController
+magenta	app/rm-ansiterm.rb	/^      def magenta(string = nil)$/;"	f	class:Term.ANSIColor
+method_missing	app/string.rb	/^  def method_missing(sym, *args, &block)$/;"	f	class:String
+minusTapped	app/fizz_buzz_view_controller.rb	/^  def minusTapped(sender)$/;"	f	class:FizzBuzzViewController
+negative	app/rm-ansiterm.rb	/^      def negative(string = nil)$/;"	f	class:Term.ANSIColor
+on_black	app/rm-ansiterm.rb	/^      def on_black(string = nil)$/;"	f	class:Term.ANSIColor
+on_blue	app/rm-ansiterm.rb	/^      def on_blue(string = nil)$/;"	f	class:Term.ANSIColor
+on_cyan	app/rm-ansiterm.rb	/^      def on_cyan(string = nil)$/;"	f	class:Term.ANSIColor
+on_green	app/rm-ansiterm.rb	/^      def on_green(string = nil)$/;"	f	class:Term.ANSIColor
+on_magenta	app/rm-ansiterm.rb	/^      def on_magenta(string = nil)$/;"	f	class:Term.ANSIColor
+on_red	app/rm-ansiterm.rb	/^      def on_red(string = nil)$/;"	f	class:Term.ANSIColor
+on_white	app/rm-ansiterm.rb	/^      def on_white(string = nil)$/;"	f	class:Term.ANSIColor
+on_yellow	app/rm-ansiterm.rb	/^      def on_yellow(string = nil)$/;"	f	class:Term.ANSIColor
+p	app/kernel.rb	/^  def p(arg, style=nil)$/;"	f	class:Kernel
+plusTapped	app/fizz_buzz_view_controller.rb	/^  def plusTapped(sender)$/;"	f	class:FizzBuzzViewController
+rapid_blink	app/rm-ansiterm.rb	/^      def rapid_blink(string = nil)$/;"	f	class:Term.ANSIColor
+red	app/rm-ansiterm.rb	/^      def red(string = nil)$/;"	f	class:Term.ANSIColor
+reset	app/rm-ansiterm.rb	/^      def reset(string = nil)$/;"	f	class:Term.ANSIColor
+resetTapped	app/fizz_buzz_view_controller.rb	/^  def resetTapped(sender)$/;"	f	class:FizzBuzzViewController
+rotate_background	app/fizz_buzz_view_controller.rb	/^  def rotate_background(view_handle)$/;"	f	class:FizzBuzzViewController
+strikethrough	app/rm-ansiterm.rb	/^      def strikethrough(string = nil)$/;"	f	class:Term.ANSIColor
+uncolored	app/rm-ansiterm.rb	/^    def uncolored(string = nil) # :yields:$/;"	f	class:Term.ANSIColor
+underline	app/rm-ansiterm.rb	/^      def underline(string = nil)$/;"	f	class:Term.ANSIColor
+underscore	app/rm-ansiterm.rb	/^      def underscore(string = nil)$/;"	f	class:Term.ANSIColor
+viewDidLoad	app/fizz_buzz_view_controller.rb	/^  def viewDidLoad$/;"	f	class:FizzBuzzViewController
+white	app/rm-ansiterm.rb	/^      def white(string = nil)$/;"	f	class:Term.ANSIColor
+yellow	app/rm-ansiterm.rb	/^      def yellow(string = nil)$/;"	f	class:Term.ANSIColor
