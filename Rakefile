@@ -1,5 +1,6 @@
 $:.unshift("/Library/RubyMotion/lib")
-require 'motion/project'
+# require 'motion/project'
+require 'motion/project/template/ios'
 require 'rubygems'
 # require 'motion-testflight'
 # require 'motion-dtrace'
