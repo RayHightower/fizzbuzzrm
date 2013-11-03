@@ -3,10 +3,10 @@ $:.unshift("/Library/RubyMotion/lib")
 require 'motion/project/template/ios'
 require 'rubygems'
 # require 'motion-testflight'
-# require 'motion-dtrace'
+require 'motion-dtrace'
 
 # PROVISIONING_PROFILE idea borrowed from Jim Weirich's RubyMotion solutions for BNR
-PROVISIONING_PROFILE = FileList['provisioning/*.mobile*'].first
+# PROVISIONING_PROFILE = FileList['provisioning/*.mobile*'].first
 
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
