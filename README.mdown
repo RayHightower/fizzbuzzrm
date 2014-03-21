@@ -8,4 +8,4 @@ Key points demonstrated:
 * Using RubyMotion with Xcode's Interface Builder
 * TDD with RubyMotion's RSpec clone, MacBacon
 
-Additional RubmMotion info will be posted at [RayHightower.com](http://rayhightower.com) I explore the tool further.
+Additional RubmMotion info will be posted at [RayHightower.com](http://rayhightower.com) as I explore the tool further.
